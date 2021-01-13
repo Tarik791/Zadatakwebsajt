@@ -1,0 +1,477 @@
+body{
+  font: 15px/1.5 Arial,  Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color:black;
+}
+
+/*Global container*/
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+button{
+  cursor: pointer;
+  border-radius:4px;
+  font-size: 16px;
+  margin-right: 50px;
+  border: none;
+  color: #fff;
+  width: 120px;
+    height: 40px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: 0.5s;
+  background: linear-gradient(90deg, #0162c8, #042429);
+}
+
+button:hover{
+  background: #2980b9;
+}
+
+
+.button_1{
+  height: 38px;
+  background: #e8491d;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #ffff;
+}
+
+/*header*/
+header{
+  background: transparent;
+  color: #fff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: transparent;
+}
+
+header a{
+  color: #ffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+
+}
+
+header li{
+  float: left;
+  display: inline;
+  padding:0 20px 0 20px ;
+
+}
+
+header #branding{
+  float: left;
+}
+header #branding h1 {
+  margin: 0;
+}
+
+header nav {
+  position: relative;
+  left: 25%;
+  margin-top: 10px;
+  text-align: center;
+  transition: 1.0s;
+}
+
+header .highlight, header .current a{
+  color: blue;
+}
+
+header a:hover {
+  color: gray;
+  font-weight: bold;
+  transition: 0.5s;
+
+}
+
+/*showcase*/
+#showcase {
+  min-height: 300px;
+  background-image: url(images/5.jpeg) ;
+  text-align: center;
+  color: #ffff;
+}
+#showcase h1{
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p{
+  font-size: 20px;
+}
+/*newsletter*/
+#newsletter{
+  padding: 15px;
+  color: #fff;
+  background:#35424a;
+  width: 73%;
+  height: 180px;
+  position: relative;
+  left: 10%;
+}
+
+
+#newsletter h1{
+  float: left;
+}
+#newsletter p{
+  float: left;
+  position: relative;
+  right: 50%;
+  top: 30px;
+}
+
+#newsletter form{
+  float: right;
+  margin-top: 45px;
+}
+
+#newsletter input[type="email"]{
+  padding: 4px;
+  height: 35px;
+  width: 250px;
+}
+
+/* boxes*/
+#boxes {
+  margin-top: 20px;
+  color: white;
+}
+.naslov{
+  color: gray;
+  text-align: center;
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+.paragraf{
+  color: gray;
+  text-align: center;
+  font-size: 25px;
+}
+
+.paragrafdva{
+  position: relative;
+  left: 10%;
+}
+.paragraftri{
+  position: relative;
+  left: 10%;
+  color: gray;
+  bottom: 15px;
+}
+.naslovdva{
+  position: relative;
+  left: 10%;
+  color: gray;
+  bottom: 15px;
+}
+.naslovtri{
+  text-align: center;
+  color: gray;
+  bottom: 15px;
+  font-size: 50px;
+}
+.paragrafcetiri{
+  position: relative;
+  left: 25%;
+  color: #808080;
+  font-size: 20px;
+}
+.paragrafpet{
+  position: relative;
+  left: 35%;
+  color: #808080;
+  font-size: 20px;
+}
+
+/*SIDE BAR*/
+.images {
+  display: flex;
+  width: 100%;
+}
+.images img {
+  height: 400px;
+  width: 100%;
+  transition: all 0.50s ease;
+}
+.images input {
+  display: none;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.dots label {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: solid #fff 3px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  margin: 5px;
+}
+.dots label:hover {background: #fff;}
+#img1:checked ~ .m1 {
+  margin-left: 0;
+}
+#img2:checked ~ .m2 {
+  margin-left: -100%;
+}
+#img3:checked ~ .m3 {
+  margin-left: -200%;
+}
+#img4:checked ~ .m4 {
+  margin-left: -300%;
+}
+
+
+/**/
+/* HR*/
+
+/*svg image*/
+
+ #Capa_1{
+   width: 200px;
+   margin: 0% auto;
+   display: block;
+   position: relative;
+   left: 10%;
+   bottom: 150px;
+ }
+ .face, .man{
+  fill-opacity: 0;
+  stroke: #fff;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 2000;
+ }
+ .man{
+   animation: man 6s ease-in-out;
+ }
+ @keyframes man{
+   0%{
+     stroke-dashoffset: 2000;
+   }
+   
+   100%{
+    stroke-dashoffset: 0;
+  }
+ }
+ .face{
+   animation: face 12s ease-in-out;
+ }
+ @keyframes face{
+  0%{
+    stroke-dashoffset: 2000;
+  }
+  50%{
+    stroke-dashoffset: 2000;
+  }
+  100%{
+   stroke-dashoffset: 0;
+ }
+}
+#boxes .box {
+  float:left;
+  text-align: center;
+  width:30%;
+  padding: 10px;
+}
+
+#boxes .box img{
+  width: 60px;
+  border-radius: 40px;
+}
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  color: gray;
+  background-color:transparent;
+  
+}
+/*video*/
+.feature-img{
+  width: 100%;
+  margin: auto;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.play-btn{
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.video-player{
+  width: 55%;
+  position: absolute;
+  left: 50%;
+  top: 83%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+video:focus{
+  outline: none;
+}
+.close-btn{
+  position: absolute;
+  top: 8%;
+  right: 10px;
+  left: 92%;
+  width: 30px;
+  cursor: pointer;
+  
+}
+/*
+slika
+*/
+.slika{
+   
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.card-title {
+  font-size: 30px;
+  text-align: right;
+  font-weight: bold;
+ 
+}
+div.card-image{
+  padding-bottom: 100px;
+}
+div.card-image img {
+  width: 50%;
+  height: auto;
+  padding-top: 220px;
+
+}
+
+/* Phone Devices Query */
+@media only screen and (max-width: 37.5em) {
+  div.card-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card {
+    width: 100%;
+    margin-top: -4px;
+  }
+}
+
+.image {
+  display: inline-block;
+  text-align: center;
+    width: 33%;
+    float: left;
+}
+
+figure{
+  overflow: hidden;
+  margin: 0 10px;
+
+}
+h3{
+  color: gray;
+  margin-top: 40px;
+  font-size: 25px;
+}
+p{
+  padding: 0 10px;
+}
+.image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+.image #zoom-in img{
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+}
+.image #zoom-in:hover img{
+  transform: scale(1.1);
+}
+/* media querys */
+/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+@media screen and (min-width: 601px) {
+  .naslovdva.example,
+  .naslovtri.example {
+    font-size: 80px;
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  .paragrafdva.example,
+  .paragraftri.example,
+  .paragrafcetiri.naslovdva.example {
+    font-size: 30px;
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  img {
+    width: 100%;
+  }
+}
+@media(max-width: 760px){
+  header #branding,
+  header nav,
+  header nav li,
+  #showcase h1,
+  #newsletter h1,
+  #newsletter form,
+  #newsletter p,
+  #pichture img,
+  #pichture h5,
+  #pichture h2,
+  #pichture p,
+  #boxes .box,
+  .naslov{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  header {
+    padding-bottom: 20px;
+  }
+  #showcase h1{
+    margin-top: 40px;
+  }
+
+  #newsletter button{
+    display: block;
+    width: 100%;
+  }
+  #newsletter form input[type="email"]{
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
